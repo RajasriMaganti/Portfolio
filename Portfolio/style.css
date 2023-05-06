@@ -1,0 +1,357 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Clicker+Script&family=Courgette&family=Dancing+Script:wght@600&display=swap');
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #ffffff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+
+}
+body.dark {
+    --bg-black-900: #151515;
+    --bg-black-100: #222;
+    --bg-black-50: #393939;
+    --text-black-900: #FFF;
+    --text-black-700: #E9E9E9E9;
+}
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+html{
+    font-size: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--bg-black-900);
+    padding-left: 310px;
+}
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background:var(--bg-black-100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:8rem 2rem;
+    width: 17rem;
+    
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+}
+.logo a {
+    color: var(--text-black-900);
+    font-family: 'Courgette', cursive;
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.logo a{
+    width: 100px;
+  height: 100px;
+  background:
+    linear-gradient(to right, rgba(24, 179, 65, 0.75),rgba(69,227,145,0.895), transparent 4px) 0 0,   
+    linear-gradient(to left, rgba(24, 179, 65, 0.75),rgba(69, 227, 145, 0.895), transparent 4px) 100% 100%,
+    linear-gradient(to bottom,rgba(24, 179, 65, 0.75),rgba(69, 227, 145, 0.895), transparent 4px) 0 0,   
+    linear-gradient(to top,rgba(24, 179, 65, 0.75),rgba(69,227,145,0.895), transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+.logo a span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 50px;
+    font-weight: 700;
+}
+header .navbar a{
+    display: block;
+    font-size: 1rem;
+    color: #14c856;
+    margin: 2rem 0;
+}
+header .navbar a:hover{
+    letter-spacing: .2rem;
+    color:var(--main-color);
+}
+@media (max-width:991px){
+    html{
+        font-size: 95%;
+    }
+    body{
+        padding:0; 
+    }
+    header{
+        left: -120%;
+    }
+.navbar{
+    left: -270px;
+}
+}
+/*------------HOME SECTION---------------*/
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.home .image{
+    flex: 1 1 100px;
+}
+.home .image img{
+    border-radius: 50%;
+    border: 6px solid #1db04e;
+    width:90%;
+}
+.home .content{
+    flex:1 1 400px;
+}
+.home .content .hi{
+    font-size: 2rem;
+
+}
+.home .content h3{
+    font-size: 1.5rem;
+
+}
+.home .content h3 span{
+    font-size: 2rem;
+    color:#14c856;
+    font-family: 'Dancing Script', cursive;
+}
+.home .content .info{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 800;
+}
+.btn{
+    display: inline-block;
+    background-color:#14c856;   
+  color:white;
+  font-size: 20px;
+  padding: 6px 26px;
+  cursor: pointer;
+  border-radius: 33px;
+  text-align: center;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+    letter-spacing: .2rem;
+}
+/*------------ABOUT SECTION---------------*/
+.heading{
+    font-size:30px;
+    font-weight:bolder;
+    color:#000502;
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 4px solid #14c856; 
+    width: 14%;
+}
+.about .mee span{
+    font-size: 35px;
+    color:#14c856;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1px;
+}
+.about .para1{
+    letter-spacing: 1px;
+}
+.about .para{
+    letter-spacing: 1px;
+}
+.about .one {
+    border-bottom-style:solid;
+    padding-top: 4px;
+    border-bottom: 2px solid rgb(186, 182, 182); 
+    width: 35%;
+    border-width: 1px 0;    
+  }
+.about .two {  
+    padding-top: 4px;  
+    padding-bottom: 40px; 
+  }
+.cv{
+    display: inline-block;
+    background-color:#14c856; 
+  color:white;
+  font-size: 18px;
+  padding: 6px 26px; 
+  cursor: pointer;
+  border-radius: 33px;
+  text-align: center;
+}
+.cv:hover {
+    background-color: black;
+    color: white;
+    letter-spacing: .1rem;
+}
+/*----------------SKILLS SECTION---------------*/
+.section-title h2{
+    font-family: 'Chakra Petch', sans-serif;
+    border-bottom: 4px solid #14c856; 
+    width: 8%;
+    
+}
+.column {
+    float: left;
+    width: 30%;
+    height: 6cm;
+    padding: px 40px;
+    padding-left: 60px;
+  }
+.row {margin: 0 -5px;}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.card {
+    background-color: var(--bg-black-100);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    height: 4.5cm;
+    width: 7.5cm;
+    border-radius: 15px;
+    text-align: center; 
+  }
+  .row i{
+    color: #14c856;
+  }
+  .column i{
+    color:#14c856
+  }
+  .row h3{
+    padding-top: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+.column h3{
+    padding-top: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+/*-------------ACHEIVEMENTS SECTION-------------*/
+.asection-title h2{
+    font-family: 'Chakra Petch', sans-serif;
+    border-bottom: 4px solid #14c856; 
+    width: 20%;
+} 
+.icon{
+    float: left;
+    width: 50%;
+}
+.row2 i{
+    color: #14c856;
+}
+.row3 i{
+    color: #14c856;
+}
+/*------------CERTIFICATION SECTION START------------*/
+.cardS {
+    width: 20%;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+}
+.container .row h2{
+    font-family: 'Chakra Petch', sans-serif;
+    border-bottom: 4px solid #14c856; 
+    width: 15%;
+} 
+.cardS:hover {
+    box-shadow: 0px 20px 20px 0 rgba(16, 250, 8, 0.2);
+  }
+.cardS img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+.cardS-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } 
+w3-container {
+    padding: 1rem 16px;
+  }
+/*---------contact section---------------*/
+.contact-title h2{
+    font-family: 'Chakra Petch', sans-serif;
+    border-bottom: 4px solid #14c856; 
+    width: 17%;
+} 
+.con-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contact-sub-title {
+    color: var(--text-black-900);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.iconN{
+    float: left;
+    width: 33.33%;
+}
+.contact .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6 {
+    flex: 0 4% 45%;
+    float: left;
+    width: 45%;
+}
+.contact .contact-form .col-12 {
+    flex: 0 0 100%;
+    width: 90%;
+}
+.contact .contact-form .form-item {
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 14px;
+    color:#14c856;
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus {
+    box-shadow: 0 0 20px rgba(48, 46, 77, .15);
+}
+.contact .contact-form .form-item textarea.form-control {
+    height: 140px;
+}
+.contact .contact-form .btn {
+    height: 50px;
+    padding: 0 50px;
+}
+
